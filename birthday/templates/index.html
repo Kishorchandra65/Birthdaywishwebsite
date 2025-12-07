@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <!-- Font Awesome CDN -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-M9Ku9QwXx0RmBzso0Zo6cSXiZQOD5sVxL2N0Zx+2nvMbZ0bdfEm7W4CefV5FHRuD5U4Wy1F1f7NwKqQm7r7FHQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+
+</head>
+<body>
+   <!-- Background Music Player -->
+  <div class="music-player">
+    <button id="musicBtn">🎵 Play Music</button>
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+<!-- Home Section -->
+  <section id="home" class="section hero">
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="{%static 'images/hero-section.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+        <img src="{%static 'images/herobg.png' %}" alt="i love you">
+      <h1>For the Love of My Life</h1>
+      <p>A small piece of my heart made just for you.</p>
+      <div id="days-counter"> We've been together for <span id="days"></span> days </div>
+    </div>
+  </section>
+
+<!----- Image Caraousal ------>
+  <section id="girl-image" class="section">
+    <h2> You My Love </h2>
+    <div class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="{% static 'images/11.jpg' %}" alt="1" />
+        </div>
+        <div class="slider-img">
+          <img src="{% static 'images/11.jpg' %}" alt="2" />
+        </div>
+        <div class="slider-img">
+          <img src="{% static 'images/11.jpg' %}" alt="3" />
+        </div>
+        <div class="slider-img active">
+          <img src="{% static 'images/11.jpg' %}" alt="4" />
+        </div>
+        <div class="slider-img">
+          <img src="{% static 'images/11.jpg' %}" alt="5" />
+        </div>
+        <div class="slider-img">
+          <img src="{% static 'images/11.jpg' %}" alt="6" />
+        </div>
+        <div class="slider-img">
+          <img src="{% static 'images/11.jpg' %}" alt="7" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 💖 Romantic & Luxurious Birthday Section -->
+  <section id="birthday" class="section birthday-romantic">
+
+  <div class="birthday-inner">
+    <h2 class="romantic-birthday-title">💝 Happy Birthday, My Queen 👑</h2>
+    <p class="romantic-birthday-intro">
+      Today the universe glows brighter,  
+      because it celebrates the day *you* came into the world.  
+      My heart beats softer, my soul feels lighter —  
+      because it belongs to you. 💫
+    </p>
+
+    <div class="romantic-birthday-box">
+      <p>Every sunrise reminds me of your smile. ☀️</p>
+      <p>Every heartbeat whispers your name. 💗</p>
+      <p>You’re not just my love — you are my miracle, my forever dream. 🌹</p>
+      <p class="signature">With endless love,<br><strong>— [Your Name]</strong></p>
+    </div>
+
+  </div>
+  </section>
+  
+
+<!-- 🌹 Romantic Story Section -->
+  <section id="story" class="section story-section">
+  <div class="story-wrapper">
+    
+    <!-- Left Side: Text -->
+    <div class="story-content">
+      <h2 class="romantic-title"> Our Beautiful Story </h2>
+      <p class="romantic-text">
+        It all began with a simple glance — and in that moment,  
+        my world found its missing piece.  
+        Every laugh, every touch, every memory we’ve made  
+        paints the colors of my heart. 💖  
+        <br><br>
+        You are my poetry, my calm in chaos,  
+        my forever favorite chapter.
+      </p>
+
+      <div class="timeline">
+        <div class="event">💬 “Hey, you.” — and everything changed.</div>
+        <div class="event">🌸 Our First Date — endless smiles, shy hearts.</div>
+        <div class="event">💍 Together — our story, written in stars.</div>
+      </div>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="story-image">
+      <div class="image-frame">
+        <img src="{% static 'images/ourphoto.jpg' %}" alt="Our Story Image" />
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+<!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2 style=" font-weight: 800;font-size: 3rem; z-index: 55;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Our Precious moments </h2>
+    <div class="container">
+            <div class="slide">
+    
+                <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);"></div>
+                <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);"></div>
+                <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);"></div>
+                <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);"></div>
+                <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);"></div>
+                <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);"></div>
+
+            </div>
+            <div class="button">
+              <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+              <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+    </div>
+  </section>
+
+<!-- 💛 Why I Love You Section -->
+  <section id="reasons" class="section reasons-romantic">
+  <div class="reasons-wrapper">
+    
+    <!-- Left: Image -->
+    <div class="reasons-image">
+      <div class="heart-frame">
+        <img src="{% static 'images/why.jpg' %}" alt="Why I Love You Image" />
+        <div class="soft-glow"></div>
+      </div>
+    </div>
+
+    <!-- Right: Text -->
+    <div class="reasons-content">
+      <h2 class="reasons-title"> Why I Love You </h2>
+      <p class="reasons-text">
+        Every heartbeat of mine finds its rhythm in your smile.  
+        You make the ordinary magical and the impossible seem easy.  
+        Your love wraps me in warmth, peace, and endless wonder. 🌹  
+        <br><br>
+        You are my home, my laughter, my calm after every storm.  
+        Loving you isn’t just a feeling — it’s the purpose of my soul. 💫
+      </p>
+
+      <ul class="reasons-list">
+        <li>💖 Your smile brightens even my darkest days.</li>
+        <li>🌸 You believe in me when I forget to believe in myself.</li>
+        <li>💫 You make silence comfortable and moments timeless.</li>
+        <li>🌹 You love fiercely, selflessly, beautifully.</li>
+        <li>💞 You are, simply, my everything.</li>
+      </ul>
+    </div>
+
+  </div>
+  </section>
+
+
+   <!-- 🌈 Our Forever Dreams Section with Video Background -->
+  <section id="future" class="section future-romantic">
+  
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="future-bg-video">
+    <source src="{% static 'images/future-section.mp4' %}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="future-overlay"></div>
+
+  <div class="future-wrapper">
+
+    <!-- Left Side: Text -->
+    <div class="future-content ">
+      <h2 class="future-title"> Our Forever Dreams </h2>
+      <p class="future-text">
+        When I think about tomorrow, I see you —  
+        your smile in the morning light, your laughter echoing in our home. 🏡   
+        Our story is still being written,  
+        and the best chapters are yet to come. 💖
+      </p>
+
+      <div class="future-cards">
+        <div class="future-card">
+          <h3>Our Dream Home</h3>
+          <p>A little place filled with warmth, laughter,  
+          and late-night cuddles — our own cozy paradise.</p>
+        </div>
+
+        <div class="future-card">
+          <h3>Exploring the World</h3>
+          <p>From hidden beaches to glowing city lights,  
+          every trip will be another page in our fairytale. 🌍</p>
+        </div>
+
+        <div class="future-card">
+          <h3>Growing Old Together</h3>
+          <p>Wrinkles, gray hair, and shared memories —  
+          still holding hands, still saying “I love you.” 💞</p>
+        </div>
+
+        <div class="future-card ">
+          <h3>Our Life Symphony</h3>
+          <p>A melody of laughter, patience, and everlasting love —  
+          played in perfect harmony, forever and always. 🎵</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="future-image">
+      <div class="dream-frame">
+        <img src="{% static 'images/future.jpg' %}" alt="Our Future Together" />
+      </div>
+    </div>
+
+  </div>
+  </section>
+  
+
+<!-- 💌 Romantic Interactive Letter Section -->
+  <section id="letter" class="section letter-romantic">
+  <h2 class="letter-title"> A Letter from My Heart </h2>
+
+  <!-- Envelope -->
+  <div class="envelope-scene" onclick="openLetter()">
+    <div class="envelope">
+      <div class="envelope-front">
+        <div class="flap"></div>
+        <div class="pocket"></div>
+        <div class="heart-seal">💖</div>
+      </div>
+      <div class="letter-sheet">
+        <p>To My Forever Love ❤️</p>
+      </div>
+    </div>
+    <p class="tap-text"> Tap to open </p>
+  </div>
+
+  <!-- Pop-up Letter Modal -->
+  <div id="letterModal" class="letter-modal">
+    <div class="letter-popup">
+      <span class="close-btn" onclick="closeLetter()">✖</span>
+      <h3 class="popup-title">To My Forever Love </h3>
+      <div class="popup-content">
+        <p>My Dearest,<br>
+          The moment our souls intertwined, the universe whispered *finally*.  
+          You became my calm, my warmth, and my every heartbeat’s favorite sound.  
+          With you, life feels like poetry — soft, glowing, infinite.<br>
+
+          Every glance from you paints galaxies in my mind.  
+          Every touch, every laugh, every silence — they make my world whole.  
+          You are my forever muse, my sweetest home, my endless love. <br>
+
+          Even if the stars fade, my love for you will burn eternal —  
+          a golden flame that time can never dim.<br>
+        </p>
+        <p class="signature">Forever yours,<br><strong>— [Your Name]</strong></p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  
+<!-- 🌹 Ending / Thank You Section -->
+  <section id="contact" class="section ending-section">
+  <div class="ending-wrapper">
+    <h2 class="ending-title">Thank You for Being My Forever</h2>
+
+    <p class="ending-text">
+      Every heartbeat, every smile, every moment — it all means the world to me.  
+      Thank you for filling my life with love, laughter, and endless warmth.  
+      <br><br>
+      You are my peace, my reason, my forever home.  
+      No words will ever be enough, but my heart will always whisper —  
+      <strong>“I love you, endlessly.” 💫</strong>
+    </p>
+
+    <a href="https://wa.me/" target="_blank" class="romantic-btn end-btn">💌 Send a Message</a>
+  </div>
+  </section>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+
+
+

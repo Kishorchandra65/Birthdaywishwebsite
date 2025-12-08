@@ -56,17 +56,6 @@ BirthdayWish/
 pip install -r requirements.txt
 python manage.py runserver
 
-
-Open:
-
-http://127.0.0.1:8000/
-
-🌐 Live Demo
-
-🔗 (Add your website link here)
-
-https://yourbirthdaywishwebsite.com
-
 📸 Screenshots (Optional)
 
 <img width="1890" height="920" alt="Screenshot 2025-12-03 193926" src="https://github.com/user-attachments/assets/96993987-8050-45fd-ad51-f9fdbe2f0730" />
